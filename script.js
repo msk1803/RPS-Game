@@ -6,6 +6,17 @@ var winCount = 0;
 var lossCount = 0;
 var drawCount = 0;
 
+document.getElementById('reset').onclick = function () {
+    console.log(winCount);
+    winCount = 0;
+    lossCount = 0;
+    drawCount = 0;
+    document.getElementById('win').innerHTML = "";
+    document.getElementById('draw').innerHTML = "";
+    document.getElementById('loss').innerHTML = "";
+    resultDisplay.textContent = 'Lets Play';
+    document.getElementById('computer').innerHTML = ""
+}
 rockButton.addEventListener('click', () => playRound('rock'));
 paperButton.addEventListener('click', () => playRound('paper'));
 scissorsButton.addEventListener('click', () => playRound('scissors'));

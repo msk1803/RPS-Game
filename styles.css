@@ -36,6 +36,22 @@ body {
     background-color: #0056b3;
   }
 
+  #reset {
+    padding: 15px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  #reset:hover {
+    background-color: #0056b3;
+  }
+
   #result,#computer {
     margin-top: 20px;
     font-size: 24px;
